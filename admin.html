@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="personalização.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <h1>Admin - Cadastro</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+          <h1>CADASTRO</h1>
+          <form id="loginForm">
+            <label for="Name">Username</label></br>
+            <input type="Name" id="Name" placeholder="Name" required><br>
+            <label for="Email">Email</label>
+            <input type="Email" id= "Email" placeholder="Email" required>
+  
+            <ul class="helper-text">
+              <li class="lowercase">Username Deve conter ao menos uma letra minuscula.</li>
+              <li class="uppercase">Username Deve conter ao menos uma letra maiuscula.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Cadastrar" onclick="store()"><br>          
+          </form>
+        </form>
+      </div>
+      
+      <div class="container">
+      <h2>Lista de cadastrados</h2><br>
+      <label for="searchTerm">Pesquisar por Username ou Email:</label>
+      <input type="text" id="searchTerm" name="searchTerm">
+      <button onclick="search()">Pesquisar</button>
+      <ul id="cadastroLista"></ul>
+      <button class = "delete-all" onclick="deleteAll()">Excluir Todos</button>
+      </div>
+    </main>
+
+  </body>
+  <script src="script.js"></script>
+</html>
